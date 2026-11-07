@@ -3,15 +3,18 @@
 const Hero = () => {
     return(
         <>
-            <section className="min-h-dvh grid">
-                <div className="border grid grid-cols-2">
-                    <div className=" bg-green-600 w-5/6 flex flex-col">
-                        <h1></h1>
-                    </div>
-
-                    <div className= "">
-                        
-                    </div>
+            <section className="min-h-dvh grid gap-3">
+                <div className="flex flex-col gap-4 items-center justify-center text-center">
+                    <h1 className="text-6xl font-bold">Developers and Coders apresenta</h1>
+                    <img></img>
+                    <h2 className="text-3xl font-semibold">Tornando sua escolha de moradia e hospedagem mais simples e segura!</h2>
+                    <p className="text-2xl">Em uma das maiores metrópoles do mundo, conectar pessoas ao lugar ideal 
+  não precisa ser um desafio.</p>
+                </div>
+                <div className="flex gap-6 items-center justify-center text-center">
+                    <button className="bg-green-500 rounded-4xl py-2 px-4 text-xl">Conheça o TodaSP</button>
+                    <button className="bg-red-500 rounded-4xl py-2 px-4 text-xl">Comece a explorar</button>
+                    <button className="bg-yellow-300 rounded-4xl py-2 px-4 text-xl">Entre em contato</button>
                 </div>
             </section>
         </>
