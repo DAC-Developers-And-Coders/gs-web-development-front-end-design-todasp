@@ -12,9 +12,9 @@ const Hero = () => {
   não precisa ser um desafio.</p>
                 </div>
                 <div className="flex gap-6 items-center justify-center text-center">
-                    <button className="bg-green-500 rounded-4xl py-2 px-4 text-xl">Conheça o TodaSP</button>
-                    <button className="bg-red-500 rounded-4xl py-2 px-4 text-xl">Comece a explorar</button>
-                    <button className="bg-yellow-300 rounded-4xl py-2 px-4 text-xl">Entre em contato</button>
+                    <button className="bg-green-500 border-2 border-green-800 rounded-4xl py-2 px-4 text-xl transition duration-500 hover:scale-105 hover:bg-green-300">Conheça o TodaSP</button>
+                    <button className="bg-red-500 border-2 border-red-800 rounded-4xl py-2 px-4 text-xl transition duration-500 hover:scale-105 hover:bg-red-300">Comece a explorar</button>
+                    <button className="bg-yellow-300 border-2 border-yellow-800 rounded-4xl py-2 px-4 text-xl transition duration-500 hover:scale-105 hover:bg-yellow-200">Entre em contato</button>
                 </div>
             </section>
         </>
