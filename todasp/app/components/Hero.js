@@ -13,7 +13,7 @@ const Hero = () => {
                 </div>
                 <div className="flex gap-6 items-baseline justify-center text-center">
                     <button className="bg-green-500 border-2 border-green-800 rounded-4xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-green-300">Conheça o TodaSP</button>
-                    <button className="bg-red-500 border-2 border-red-800 rounded-4xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-red-300">Comece a explorar</button>
+                    <button className="bg-red-500 border-2 font-extrabold text-white border-red-800 rounded-4xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-red-300">Comece a explorar</button>
                     <button className="bg-yellow-300 border-2 border-yellow-800 rounded-4xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-yellow-200">Entre em contato</button>
                 </div>
             </section>
