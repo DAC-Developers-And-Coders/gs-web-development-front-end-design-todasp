@@ -3,8 +3,8 @@
 const Contact = () => {
     return(
         <>
-            <section className="min-h-dvh flex flex-col gap-4 mt-10">
-                <h2 className="text-3xl text-center justify-center text-slate-900">Contato</h2>
+            <section id="contact" className="min-h-dvh flex flex-col gap-4 pt-20 border">
+                <h2 className="text-3xl pt-4 text-center justify-center text-slate-900">Contato</h2>
                 <div className="flex flex-col gap-4 items-center justify-center text-center">
                     <p className="text-slate-700 text-balance text-xl">
                         Entre em contato conosco através do formulário abaixo:
@@ -32,6 +32,10 @@ const Contact = () => {
                         </button>
                     </form>
                 </div>
+                <footer className=" bg-black w-full h-25 mt-auto grid grid-cols-2 gap-2 items-center justify-items-center">
+                    <img className="w-15 md:w-20 lg:w-25 xl:w-30" src="./assets/images/DAC_logo_mini.png" alt="Dac icon"/>
+                    <a href="https://www.fiap.com.br/" target="_blank"><img className="w-15 md:w-20 lg:w-25 xl:w-30" src="./assets/images/fiap_logo.png" alt="fiap icon" /></a>
+                </footer>
             </section>
         </>
     )
