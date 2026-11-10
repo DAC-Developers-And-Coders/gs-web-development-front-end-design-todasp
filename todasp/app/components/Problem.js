@@ -3,7 +3,7 @@
 const Problem = () => {
     return(
         <>
-            <section id="problem" className="min-h-dvh flex flex-col gap-6 justify-center mx-4 xl:gap-2">
+            <section id="problem" className="min-h-dvh grid grid-cols-1 gap-6 justify-center mx-6 xl:gap-2">
                     <h2 className="text-3xl text-center justify-center text-slate-900 pt-10 md:text-4xl xl:pt-15">O Problema</h2>
                     <div className="flex flex-col gap-4 items-center justify-center xl:flex-row xl:gap-10">
                         <div className="justify-center">

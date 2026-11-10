@@ -12,19 +12,19 @@ const Team = () => {
 
     return(
         <>
-            <section id="team" className="min-h-dvh flex flex-col gap-4 pt-20 mx-4">
+            <section id="team" className="min-h-dvh grid grid-cols-1 gap-3 pt-20 mx-4">
                 <h2 className="text-3xl justify-center text-center text-slate-900 md:text-4xl">Equipe</h2>
                 <div className="flex flex-col gap-4 items-center justify-center text-center">
-                    <p className="text-slate-700 text-balance text-lg md:text-xl">
+                    <p className="text-slate-700 text-balance text-lg md:text-xl xl:text-2xl">
                         Conheça a equipe por trás do projeto TodaSP, formada por desenvolvedores e coders dedicados a tornar sua escolha de moradia e hospedagem mais simples e segura:
                     </p>
                 </div>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-wrap justify-center gap-5 p-4">
                     {team.map((member) => (
-                        <div key={member.id} className="flex flex-col gap-2 border-4 border-black rounded-2xl p-6 bg-white">
-                            <h2 className="text-lg text-wrap font-bold md:text-xl">{member.name}</h2>
-                            <h3 className="text-md text-wrap md:text-lg">{member.rm}</h3>
-                            <p className="text-sm text-wrap md:text-lg">{member.text}</p> 
+                        <div key={member.id} className="w-full h-auto border-2 bg-white rounded-2xl p-2 flex flex-col gap-2 md:w-[calc(33.3%-1.5rem)]">
+                            <h2 className="text-lg text-wrap font-bold md:text-xl md:text-center xl:text-3xl">{member.name}</h2>
+                            <h3 className="text-md text-wrap md:text-lg md:text-center xl:text-xl">{member.rm}</h3>
+                            <p className="text-sm text-wrap md:text-lg md:text-center xl:text-xl">{member.text}</p> 
                         </div>
                     ))}
                 </div>

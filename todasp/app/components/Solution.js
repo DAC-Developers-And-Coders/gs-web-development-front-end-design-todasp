@@ -3,9 +3,9 @@
 const Solution = () => {
     return(
         <>
-            <section id="solution" className="min-h-dvh flex flex-col gap-6 mx-4 justify-center xl:gap-2">
-                <h2 className="text-3xl text-center justify-center text-slate-900 md:text-4xl">A Solução</h2>
-                <div className="flex flex-col gap-4 items-center justify-center xl:flex-row">
+            <section id="solution" className="min-h-dvh grid grid-cols-1 gap-6 mx-6 xl:gap-2">
+                <h2 className="flex items-center text-3xl text-center justify-center text-slate-900 md:text-4xl pt-15">A Solução</h2>
+                <div className="grid grid-cols-1 gap-4 xl:grid-cols-2 xl:pt-5">
                     <div className="flex flex-col gap-4 items-center justify-center">
                         <h2 className="text-lg text-slate-900 text-center md:text-xl xl:text-2xl xl:text-left">
                             Nossa plataforma fornece informações detalhadas sobre a infraestrutura do bairro, permitindo que os usuários façam escolhas mais informadas ao alugar um imóvel ou hospedagem.
@@ -27,7 +27,9 @@ const Solution = () => {
                             </div>
                         </div>
                     </div>
-                    <img src="../assets/images/aprovado.png" alt="Solução" className="max-xl:hidden"/>
+                    <div className="flex items-center">
+                        <img src="../assets/images/aprovado.png" alt="Solução" className="max-xl:hidden flex "/>
+                    </div>
                 </div>
             </section>
         </>
