@@ -27,10 +27,10 @@ const Header = () => {
     return(
         <>
             <header className="bg-amber-50 sticky top-0 z-50 left-0 right-0 w-full flex flex-wrap items-center justify-between px-8 h-20 md:h-15">
-                <h2 className="text-sm md:text-xl 2xl:text-3xl">DAC</h2>
+                <h2 className="text-sm md:text-xl xl:text-2xl 2xl:text-3xl">DAC</h2>
 
                 <nav>
-                    <ul className="hidden items-center sm:flex sm:gap-3 sm:text-xs md:gap-4 md:text-sm 2xl:text-lg">
+                    <ul className="hidden items-center sm:flex sm:gap-3 sm:text-xs md:gap-4 md:text-sm xl:text-xl 2xl:text-lg">
                         {links}
                     </ul>
                     <button onClick={toggleNavBar} className="sm:hidden">
