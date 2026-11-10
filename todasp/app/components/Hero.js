@@ -12,9 +12,15 @@ const Hero = () => {
   não precisa ser um desafio.</p>
                 </div>
                 <div className="flex gap-6 items-baseline justify-center text-center xl:items-center">
-                    <button className="bg-green-500 border-2 border-green-800 rounded-xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-green-300 md:text-xl xl:text-3xl">Conheça o TodaSP</button>
-                    <button className="bg-red-500 border-2 font-extrabold text-white border-red-800 rounded-xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-red-300 md:text-xl xl:text-3xl">Comece a explorar</button>
-                    <button className="bg-yellow-300 border-2 border-yellow-800 rounded-xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-yellow-200 md:text-xl xl:text-3xl">Entre em contato</button>
+                    <a href="#problem">
+                        <button className="bg-green-500 border-2 border-green-800 rounded-xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-green-300 md:text-xl xl:text-3xl">Conheça o TodaSP</button>
+                    </a>
+                    <a>
+                        <button className="bg-red-500 border-2 font-extrabold text-white border-red-800 rounded-xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-red-300 md:text-xl xl:text-3xl">Comece a explorar</button>
+                    </a>
+                    <a href="#contact">
+                        <button className="bg-yellow-300 border-2 border-yellow-800 rounded-xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-yellow-200 md:text-xl xl:text-3xl">Entre em contato</button>
+                    </a>
                 </div>
             </section>
         </>
