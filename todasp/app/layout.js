@@ -1,7 +1,7 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Outfit({
+const OutfitSans = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
 });
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} h-full antialiased`}
+      className={`${OutfitSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-amber-50">{children}</body>
     </html>

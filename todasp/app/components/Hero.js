@@ -15,7 +15,7 @@ const Hero = () => {
                     <a href="#problem">
                         <button className="bg-green-500 border-2 border-green-800 rounded-xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-green-300 md:text-xl xl:text-3xl">Conheça o TodaSP</button>
                     </a>
-                    <a>
+                    <a href="/todasp_research">
                         <button className="bg-red-500 border-2 font-extrabold text-white border-red-800 rounded-xl py-2 px-4 text-sm transition duration-500 hover:scale-105 hover:bg-red-300 md:text-xl xl:text-3xl">Comece a explorar</button>
                     </a>
                     <a href="#contact">
