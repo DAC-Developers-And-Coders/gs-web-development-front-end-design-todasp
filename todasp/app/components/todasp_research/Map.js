@@ -14,6 +14,8 @@ const Map = () => {
 
       const { Map } = await importLibrary("maps");
 
+      const { Marker } = await importLibrary("marker");
+
       const location = {
         lat: 40.73061,
         lng: -73.935242,
@@ -26,16 +28,25 @@ const Map = () => {
       };
 
       if (mapRef.current) {
-        new Map(mapRef.current, options);
+        const map = new Map(mapRef.current, options);
+
+        new Marker({
+          position: location,
+          map: map,
+          title: "Localização",
+        });
       }
     };
 
     initMap();
+    
   }, []);
 
   return(
     <>
-        <div ref={mapRef} className="w-full h-screen" />;
+      <section>
+        <div ref={mapRef} className="w-150 h-100"/>;
+      </section>
     </>
   ) 
 };
