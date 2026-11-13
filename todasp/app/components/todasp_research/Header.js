@@ -14,7 +14,8 @@ const Header = () => {
 
      const linkStrings = {
         link1: {href: "#map", texto: "Mapa"},
-        link2: {href: "/", texto: "Início"},
+        link2: {href: "#statistics", texto: "Estatísticas"},
+        link3: {href: "/", texto: "Início"},
     };
 
     const links = Object.entries(linkStrings).map(([key, link]) => (
