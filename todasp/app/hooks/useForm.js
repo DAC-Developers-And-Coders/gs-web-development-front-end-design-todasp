@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 
-const useForm = () => {
+export const useForm = () => {
     const [forms, setForms] = useState([])
 
     useEffect(() =>{
@@ -26,6 +26,8 @@ const useForm = () => {
     const editForm = (id, uptatedTitle, updatedObservations ) => {
         setForms((prev) => prev.map((form) => form.id === id ? {...form, title: uptatedTitle, observations: updatedObservations} : form))
 
-        return {form, addForm, removeForm, editForm}
     }
+
+    return {forms, addForm, removeForm, editForm}
 }
+
