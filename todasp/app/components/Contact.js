@@ -11,9 +11,9 @@ const Contact = () => {
     return(
         <>
             <section id="contact" className="min-h-dvh grid grid-cols-1 gap-3 pt-20">
-                <h2 className="flex text-3xl pt-4 text-center justify-center items-center text-slate-900 md:text-4xl">Contato</h2>
+                <h2 className="flex text-3xl pt-4 text-center justify-center items-center text-slate-900 md:text-4xl 2xl:text-5xl">Contato</h2>
                 <div className="flex flex-col gap-8 items-center justify-center text-center">
-                    <p className="text-slate-700 text-balance text-xl md:text-3xl">
+                    <p className="text-slate-700 text-balance text-xl md:text-3xl 2xl:text-4xl">
                         Entre em contato conosco através do formulário abaixo:
                     </p>
                     <div className="grid grid-cols-1 bg-white gap-3 mx-10 md:justify-items-center xl:grid-cols-3 xl:gap-6 2xl:gap-8">

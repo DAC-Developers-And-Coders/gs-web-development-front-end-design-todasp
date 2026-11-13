@@ -4,26 +4,26 @@ const Solution = () => {
     return(
         <>
             <section id="solution" className="min-h-dvh grid grid-cols-1 gap-6 mx-6 xl:gap-2">
-                <h2 className="flex items-center text-3xl text-center justify-center text-slate-900 md:text-4xl pt-15">A Solução</h2>
+                <h2 className="flex items-center text-3xl text-center justify-center text-slate-900 md:text-4xl pt-15 2xl:text-5xl">A Solução</h2>
                 <div className="grid grid-cols-1 gap-4 xl:grid-cols-2 xl:pt-5">
                     <div className="flex flex-col gap-4 items-center justify-center">
-                        <h2 className="text-lg text-slate-900 text-center md:text-xl xl:text-2xl xl:text-left">
+                        <h2 className="text-lg text-slate-900 text-center md:text-xl xl:text-2xl xl:text-left 2xl:text-3xl">
                             Nossa plataforma fornece informações detalhadas sobre a infraestrutura do bairro, permitindo que os usuários façam escolhas mais informadas ao alugar um imóvel ou hospedagem.
                         </h2>
                         <div className="grid grid-cols-1 items-center justify-center gap-4">
                             <div className="flex flex-col gap-2 border-4 border-green-200 rounded-2xl p-6 bg-white">
-                                <h2 className="text-lg font-bold text-slate-900 md:text-xl xl:text-3xl xl:text-left">Mobilidade</h2>
-                                <p className="text-sm text-slate-700 text-wrap md:text-lg xl:text-2xl ">Informações sobre a localização de ônibus, metrô e outras opções de transporte.</p>
+                                <h2 className="text-lg font-bold text-slate-900 md:text-xl xl:text-3xl xl:text-left 2xl:text-4xl">Mobilidade</h2>
+                                <p className="text-sm text-slate-700 text-wrap md:text-lg xl:text-2xl 2xl:text-3xl">Informações sobre a localização de ônibus, metrô e outras opções de transporte.</p>
                             </div>
 
                             <div className="flex flex-col gap-2 border-4 border-green-200 rounded-2xl p-6 bg-white">
-                                <h2 className="text-lg font-bold text-slate-900 md:text-xl xl:text-3xl">Segurança</h2>
-                                <p className="text-sm text-slate-700 text-wrap md:text-lg xl:text-2xl">Dados sobre a presença de postos de saúde, policiamento e índices de criminalidade.</p>
+                                <h2 className="text-lg font-bold text-slate-900 md:text-xl xl:text-3xl 2xl:text-4xl">Segurança</h2>
+                                <p className="text-sm text-slate-700 text-wrap md:text-lg xl:text-2xl 2xl:text-3xl">Dados sobre a presença de postos de saúde, policiamento e índices de criminalidade.</p>
                             </div>
 
                             <div className="flex flex-col gap-2 border-4 border-green-200 rounded-2xl p-6 bg-white">
-                                <h2 className="text-lg font-bold text-slate-900 md:text-xl xl:text-3xl">Conforto</h2>
-                                <p className="text-sm text-slate-700 text-wrap md:text-lg xl:text-2xl">Informações sobre poluição sonora, arborização, ilhas de calor e vulnerabilidade a alagamentos ou quedas de energia.</p>
+                                <h2 className="text-lg font-bold text-slate-900 md:text-xl xl:text-3xl 2xl:text-4xl">Conforto</h2>
+                                <p className="text-sm text-slate-700 text-wrap md:text-lg xl:text-2xl 2xl:text-3xl">Informações sobre poluição sonora, arborização, ilhas de calor e vulnerabilidade a alagamentos ou quedas de energia.</p>
                             </div>
                         </div>
                     </div>

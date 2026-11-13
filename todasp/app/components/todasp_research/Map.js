@@ -64,7 +64,7 @@ const Map = () => {
 
   return (
     <section id="map" className="grid grid-cols-1 gap-2 min-h-dvh justify-center m-10">
-      <h1 className="text-2xl place-content-center font-bold text-center">Procure o endereço que deseja analisar!</h1>
+      <h1 className="text-3xl place-content-center font-bold text-center text-slate-900">Procure o endereço que deseja analisar!</h1>
       <div className="flex flex-col gap-4">
         <div ref={inputRef} className="w-full" />
         <div ref={mapRef} className="w-full h-100 rounded-lg overflow-hidden" />
