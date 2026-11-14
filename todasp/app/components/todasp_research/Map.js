@@ -3,7 +3,7 @@
 import { setOptions, importLibrary } from "@googlemaps/js-api-loader";
 import { useEffect, useRef } from "react";
 
-const Map = () => {
+const Map = ({onSelectAddress}) => {
   const mapRef = useRef(null);
   const inputRef = useRef(null);
 
@@ -54,7 +54,11 @@ const Map = () => {
           map.setCenter(place.location);
           map.setZoom(17);
           marker.position = place.location;
-          marker.title = place.displayName || place.formattedAddress || "";
+          const selectedAddress = place.displayName || place.formattedAddress || "";
+          marker.title = selectedAddress;
+          if (onSelectAddress) {
+            onSelectAddress(selectedAddress);
+          }
         });
       }
     };

@@ -14,8 +14,8 @@ export const useForm = () => {
         localStorage.setItem('todasp_forms', JSON.stringify(forms))
     }, [forms])
 
-    const addForm = (title, observations) => {
-        const newForm = {id: Date.now(), title, observations, data: new Date().toLocaleString("pt-BR")}
+    const addForm = (title, observations, address = "") => {
+        const newForm = {id: Date.now(), title, observations, address: address || "Região não especificada", data: new Date().toLocaleString("pt-BR")}
         setForms((prev) => [...prev, newForm])
     }
 

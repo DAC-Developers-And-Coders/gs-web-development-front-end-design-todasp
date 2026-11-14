@@ -4,7 +4,7 @@ import FormCard from "./FormCard"
 import {useForm} from "../../hooks/useForm";
 import {useState} from "react"
 
-const Form = () => {
+const Form = ({selectedAddress}) => {
 
     const {forms, addForm, removeForm, editForm} = useForm();
 
@@ -14,12 +14,12 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (!title.trim || !observations.trim()) return;
+        if (!title.trim() || !observations.trim()) return;
         if (editID) {
             editForm(editID, title, observations)
             setEditID(null)
         } else {
-            addForm(title, observations)
+            addForm(title, observations, selectedAddress)
         }
         setTitle("")
         setObservations("")
@@ -49,9 +49,9 @@ const Form = () => {
 
                         <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Título" className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-red-500" />
 
-                        <textarea value={observations} onChange={(e) => setObservations(e.target.value)} required row={4} placeholder="Observações" className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-yellow-300" />
+                        <textarea value={observations} onChange={(e) => setObservations(e.target.value)} required rows={4} placeholder="Observações" className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-yellow-300" />
 
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 border-2 bg-yellow-300 border-yellow-500 rounded-lg p-2 justify-center transition duration-500 hover:bg-yellow-200">
                             <button type="submit">
                                 {editID ? "Editar" : "Adicionar"}
                             </button>
